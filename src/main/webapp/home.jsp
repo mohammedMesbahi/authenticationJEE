@@ -57,6 +57,7 @@
 
     // If emailOfTheUser cookie does not exist, redirect to signin
     if (userEmail == null) {
+
         response.sendRedirect("signin.jsp");
     }
 %>
