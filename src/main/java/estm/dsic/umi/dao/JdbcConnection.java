@@ -3,6 +3,9 @@ package estm.dsic.umi.dao;
 
 
 import javax.json.JsonReader;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
 import java.io.FileNotFoundException;
 
 import java.io.IOException;
@@ -35,13 +38,12 @@ public class JdbcConnection {
 
     public static Connection getInstance() {
         if (connection == null) {
-            // TODO: Read JSON from file using JSON-P
-
             try {
-                Class.forName(DB_DRIVER);
-                connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
-            } catch (SQLException | ClassNotFoundException ex) {
-                throw new RuntimeException(ex);
+                Context context = new InitialContext();
+                DataSource dataSource = (DataSource) context.lookup("jdbc/myDB");
+                connection = dataSource.getConnection();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
         return connection;

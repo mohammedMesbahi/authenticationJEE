@@ -19,7 +19,7 @@ public class LogoutServlet extends HttpServlet {
         Cookie[] cookies = request.getCookies();
         if (cookies != null) {
             for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("emailOfTheUser")) {
+                if (cookie.getName().equals("email")) {
                     cookie.setMaxAge(0); // Set the cookie's maximum age to 0 for removal
                     response.addCookie(cookie);
                     break;

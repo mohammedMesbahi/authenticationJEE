@@ -80,10 +80,10 @@
 
     <form action="signing" method="post">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required value="user@example.com">
+        <input type="email" id="email" name="email" required value="mesbahi.ed@outlook.com">
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required value="password123">
+        <input type="password" id="password" name="password" required value="123456">
 
         <input type="submit" value="Sign In" class="submit-btn">
     </form>
