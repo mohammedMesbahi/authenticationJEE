@@ -1,4 +1,4 @@
-package estm.umi;
+package estm.dsic.umi.servlets;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

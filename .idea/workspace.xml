@@ -4,17 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="" />
+    <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="add home jsp">
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/umi/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/umi/SigninServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SigninServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/estm/umi/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/estm/dsic/umi/ApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/estm/umi/it/EndpointIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/estm/dsic/umi/it/EndpointIT.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Add new Servlet" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2cgVwX0th05wcJdYkTurNjywTYg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,9 +44,34 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Dell/IdeaProjects/authentication/src/main/java/estm/dsic/umi/services",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\IdeaProjects\authentication\src\main\java\estm\dsic\umi\services\" />
+      <recent name="C:\Users\Dell\IdeaProjects\authentication\src\main\java\estm\dsic\umi\services\interfaces" />
+      <recent name="C:\Users\Dell\IdeaProjects\authentication\src\main\java\estm\dsic\umi\dao" />
+      <recent name="C:\Users\Dell\IdeaProjects\authentication\src\main\java\estm\dsic\umi" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,8 +80,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708533448395</updated>
-      <workItem from="1708533449105" duration="6000" />
+      <workItem from="1708533449105" duration="6589000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1708549804503</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708549804503</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add home jsp">
+      <option name="closed" value="true" />
+      <created>1708550563270</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708550563270</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="add home jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add home jsp" />
   </component>
 </project>
