@@ -49,6 +49,11 @@
             margin-bottom: 16px;
         }
 
+        .success {
+            color: #008000;
+            margin-bottom: 16px;
+        }
+
         .submit-btn {
             background-color: #333;
             color: #fff;
@@ -68,7 +73,12 @@
         <jsp:include page="errorTags.jsp" />
     </div>
 
-    <form action="signinServlet" method="post">
+    <%-- Display success if any--%>
+    <div class="success">
+        <jsp:include page="successTags.jsp" />
+    </div>
+
+    <form action="signing" method="post">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required value="user@example.com">
 

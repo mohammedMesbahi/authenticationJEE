@@ -68,7 +68,7 @@
     <jsp:include page="errorTags.jsp" />
   </div>
 
-  <form action="signupServlet" method="post">
+  <form action="signup" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
 
@@ -80,7 +80,7 @@
 
     <input type="submit" value="Sign Up" class="submit-btn">
   </form>
-  <p>you have an account? <a href="signin.jsp">Sign In</a></p>
+  <p>you have an account? <a href="signing.jsp">Sign In</a></p>
 </div>
 
 </body>

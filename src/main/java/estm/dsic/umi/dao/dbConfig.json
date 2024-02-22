@@ -1,0 +1,14 @@
+{
+  "database": {
+    "DB_URL": "jdbc:mysql://localhost:3306/",
+    "DB_Name": "tp2_jee",
+    "DB_DRIVER": "com.mysql.cj.jdbc.Driver",
+    "DB_USERNAME": "user1",
+    "DB_PASSWORD  ": "user1",
+    "useSSL" : false
+  },
+  "app": {
+    "debugMode": true,
+    "maxConnections": 10
+  }
+}

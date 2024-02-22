@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/logoutServlet")
+@WebServlet(name = "LogoutServlet", urlPatterns = "/logout")
 public class LogoutServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -28,7 +28,7 @@ public class LogoutServlet extends HttpServlet {
         }
 
         // Redirect to the sign-in page
-        response.sendRedirect("signin.jsp");
+        response.sendRedirect("signing.jsp");
     }
 }
 

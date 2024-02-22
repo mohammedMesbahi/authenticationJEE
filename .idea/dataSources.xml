@@ -9,5 +9,13 @@
       <jdbc-url>jdbc:mysql://localhost:3306/rmi_banking</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="tp2_jee@localhost" uuid="ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>tp2_jee</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/tp2_jee</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

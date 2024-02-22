@@ -48,7 +48,7 @@
     Cookie[] cookies = request.getCookies();
     if (cookies != null) {
         for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("emailOfTheUser")) {
+            if (cookie.getName().equals("email")) {
                 userEmail = cookie.getValue();
                 break;
             }
@@ -57,8 +57,7 @@
 
     // If emailOfTheUser cookie does not exist, redirect to signin
     if (userEmail == null) {
-
-        response.sendRedirect("signin.jsp");
+        response.sendRedirect("signing.jsp");
     }
 %>
 
@@ -67,7 +66,7 @@
         <div>Welcome <%= userEmail %></div>
     </div>
     <div>
-        <form action="logoutServlet" method="post">
+        <form action="logout" method="post">
             <input type="submit" value="Logout" class="logout-btn">
         </form>
     </div>

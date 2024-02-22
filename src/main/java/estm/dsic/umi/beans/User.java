@@ -3,7 +3,7 @@ package estm.dsic.umi.beans;
 import java.io.Serializable;
 import java.util.List;
 
-public class User implements Serializable,CrudAble<User, Integer>{
+public class User implements Serializable{
     
     private Integer id;
     private String name;
@@ -12,8 +12,11 @@ public class User implements Serializable,CrudAble<User, Integer>{
 
     public User() {
     }
-
-    
+    public User(String name, String email, String password) {
+        setName(name);
+        setEmail(email);
+        setPassword(password);
+    }
 
     public Integer getId() {
         return id;
@@ -39,13 +42,21 @@ public class User implements Serializable,CrudAble<User, Integer>{
         this.password = password;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ",name='" + name + "'
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
+                "id=" + getId() +
+                ",name='" + getName() + "' "+
+                ", email='" + getEmail() + '\'' +
+                ", password='" + getPassword() + '\'' +
                 '}';
     }
 }

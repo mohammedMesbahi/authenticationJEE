@@ -15,27 +15,24 @@ public class UserDaoJDBC implements UserDao {
 
     public static UserDaoJDBC getInstance() {
         if (instance == null)
-            instance = new UserDaoJDBC(JDBCconnection.getConnection());
+            instance = new UserDaoJDBC(JdbcConnection.getInstance());
         return instance;
     }
 
 
     @Override
-    public User getById(Integer id) {
+    public User get(Integer id) {
         User user = null;
         try {
             String query = "SELECT * FROM user WHERE user.id = " + id;
-            Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
-                    ResultSet.CONCUR_READ_ONLY);
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery(query);
             if (resultSet.next()) {
                 user = new User();
                 user.setId(resultSet.getInt("id"));
                 user.setEmail(resultSet.getString("email"));
                 user.setPassword(resultSet.getString("password"));
-                user.setAccounts(
-                        AccountDaoJDBC.getInstance().getAccountsOfAUser(user)
-                );
             }
         } catch (SQLException e) {
             System.out.println("Error while getting user");
@@ -51,10 +48,11 @@ public class UserDaoJDBC implements UserDao {
     public User create(User user) {
         try {
             // creat a prepared statement
-            String query = "INSERT INTO user (email, password) VALUES (?, ?)";
+            String query = "INSERT INTO user (name,email, password) VALUES (?, ?, ?)";
             PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-            statement.setString(1, user.getEmail());
-            statement.setString(2, user.getPassword());
+            statement.setString(1, user.getName());
+            statement.setString(2, user.getEmail());
+            statement.setString(3, user.getPassword());
             statement.executeUpdate();
             ResultSet resultSet = statement.getGeneratedKeys();
             if (resultSet.next()) {
@@ -71,15 +69,27 @@ public class UserDaoJDBC implements UserDao {
     }
 
     @Override
+    public User update(User user) {
+        return null;
+    }
+
+    @Override
+    public User delete(User user) {
+        return null;
+    }
+
+    @Override
     public User get(User user) {
         User user1 = null;
         try {
-            String query = "SELECT * FROM user WHERE email = ? AND password = ?";
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(query);
+            String query = "SELECT * FROM user WHERE id = ?";
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setInt(1, user.getId());
+            ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
                 user1 = new User();
                 user1.setId(resultSet.getInt("id"));
+                user1.setName(resultSet.getString("name"));
                 user1.setEmail(resultSet.getString("email"));
                 user1.setPassword(resultSet.getString("password"));
             }
@@ -95,7 +105,7 @@ public class UserDaoJDBC implements UserDao {
     }
 
     @Override
-    public User getByEmailAndPassword(String email, String password) {
+    public User get(String email, String password) {
         User user = null;
         try {
             String query = "SELECT * FROM user WHERE email=? AND password=?";
@@ -106,6 +116,7 @@ public class UserDaoJDBC implements UserDao {
             if (resultSet.next()) {
                 user = new User();
                 user.setId(resultSet.getInt("id"));
+                user.setName(resultSet.getString("name"));
                 user.setEmail(resultSet.getString("email"));
                 user.setPassword(resultSet.getString("password"));
             }
