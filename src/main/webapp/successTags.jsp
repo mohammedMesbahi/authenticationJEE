@@ -4,7 +4,7 @@
 
 <c:if test="${not empty requestScope.successMessage}">
     <ul>
-        <c:forEach var="success" items="${requestScope.successMessages}">
+        <c:forEach var="success" items="${requestScope.successMessage}">
             <li>${success}</li>
         </c:forEach>
     </ul>
