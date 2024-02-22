@@ -12,11 +12,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class JdbcConnection {
-    private static String DB_DRIVER;
-    private static String DB_Name;
-    private static String DB_URL;
-    private static String DB_USERNAME;
-    private static String DB_PASSWORD;
+    private static String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static String DB_Name = "tp2_jee";
+    private static String DB_URL = "jdbc:mysql://localhost:3306/" + DB_Name + "?useSSL=false";
+    private static String DB_USERNAME = "user1";
+    private static String DB_PASSWORD = "user1";
     private static Connection connection;
 
     private JdbcConnection(

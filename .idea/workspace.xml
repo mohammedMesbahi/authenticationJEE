@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="add services and dao">
-      <change afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/interfaces/CrudAble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="add signup servlet">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/beans/CrudAble.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/beans/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JDBCconnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/UserDaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/UserDaoJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/interfaces/Connection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/interfaces/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/interfaces/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/services/DefaultAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/services/DefaultAuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SigninServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SigningServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signing.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,27 +37,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Dell/IdeaProjects/authentication/src/main/java/estm/dsic/umi/services",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/IdeaProjects/authentication/src/main/java/estm/dsic/umi/services&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\IdeaProjects\authentication\src\main\java\estm\dsic\umi\services\" />
@@ -100,7 +83,8 @@
       <workItem from="1708596689570" duration="616000" />
       <workItem from="1708597350308" duration="185000" />
       <workItem from="1708597573666" duration="197000" />
-      <workItem from="1708597818886" duration="7425000" />
+      <workItem from="1708597818886" duration="8385000" />
+      <workItem from="1708609299289" duration="2206000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -126,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708597268024</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add signup servlet">
+      <option name="closed" value="true" />
+      <created>1708605735361</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708605735361</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +128,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="add home jsp" />
     <MESSAGE value="add services and dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="add services and dao" />
+    <MESSAGE value="add signup servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="add signup servlet" />
   </component>
 </project>
