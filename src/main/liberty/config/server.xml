@@ -19,7 +19,7 @@
         <!--jdbc mysql-->
         <feature>jdbc-4.1</feature>
     </featureManager>
-    
+<!--comment from branch xml-->
     <httpEndpoint httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint" />
     
     <webApplication id="authentication" location="authentication.war" name="authentication"/>
