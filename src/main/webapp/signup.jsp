@@ -5,7 +5,7 @@
   Time: 9:42 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,13 +70,13 @@
 
   <form action="signup" method="post">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" name="name" required value="mesbahi">
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required value="mesbahi.ed1@gmial.com">
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+    <label for="password"  >Password:</label>
+    <input type="password" id="password" name="password" required value="123456">
 
     <input type="submit" value="Sign Up" class="submit-btn">
   </form>

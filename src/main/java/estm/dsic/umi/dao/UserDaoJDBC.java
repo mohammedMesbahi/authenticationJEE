@@ -6,16 +6,17 @@ import estm.dsic.umi.beans.User;
 import estm.dsic.umi.dao.interfaces.UserDao;
 
 public class UserDaoJDBC implements UserDao {
-    private Connection connection;
+    private final Connection connection;
     private static UserDaoJDBC instance;
 
-    private UserDaoJDBC(Connection connection) {
+    public UserDaoJDBC(Connection connection) {
         this.connection = connection;
     }
 
+
     public static UserDaoJDBC getInstance() {
         if (instance == null)
-            instance = new UserDaoJDBC(JdbcConnection.getInstance());
+            instance = new UserDaoJDBC(JdbcConnection.getConnection());
         return instance;
     }
 
@@ -80,7 +81,7 @@ public class UserDaoJDBC implements UserDao {
 
     @Override
     public User get(User user) {
-        User user1 = null;
+        User user1;
         try {
             String query = "SELECT * FROM user WHERE id = ?";
             PreparedStatement statement = connection.prepareStatement(query);

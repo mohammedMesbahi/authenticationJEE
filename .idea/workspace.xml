@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="add signup servlet">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/UserDaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/UserDaoJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SigningServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SigningServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SignupServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -71,6 +83,22 @@
       <command value="mvn clean install" />
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="remoteDebugingJee" type="Remote">
+      <module name="authentication" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="7777" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="7777" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,6 +113,9 @@
       <workItem from="1708597573666" duration="197000" />
       <workItem from="1708597818886" duration="8385000" />
       <workItem from="1708609299289" duration="2206000" />
+      <workItem from="1708674134160" duration="6792000" />
+      <workItem from="1708706007479" duration="4959000" />
+      <workItem from="1708712270251" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -124,11 +155,45 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="add home jsp" />
     <MESSAGE value="add services and dao" />
     <MESSAGE value="add signup servlet" />
     <option name="LAST_COMMIT_MESSAGE" value="add signup servlet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
