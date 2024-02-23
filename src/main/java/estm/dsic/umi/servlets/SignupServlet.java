@@ -5,9 +5,9 @@ import estm.dsic.umi.dao.UserDaoJDBC;
 
 import java.io.*;
 import java.util.ArrayList;
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
 @WebServlet(name = "SignupServlet", urlPatterns = "/signup")
 public class SignupServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
