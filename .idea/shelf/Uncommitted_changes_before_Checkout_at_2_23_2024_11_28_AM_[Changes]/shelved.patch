@@ -1,0 +1,105 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n    <groupId>estm.umi</groupId>\r\n    <artifactId>authentication</artifactId>\r\n    <packaging>war</packaging>\r\n    <version>1.0-SNAPSHOT</version>\r\n    \r\n    <parent>\r\n        <groupId>io.openliberty.tools</groupId>\r\n        <artifactId>liberty-maven-app-parent</artifactId>\r\n        <version>3.7.1</version>\r\n    </parent>\r\n    \r\n    <properties>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>\r\n        <maven.compiler.source>1.7</maven.compiler.source>\r\n        <maven.compiler.target>1.7</maven.compiler.target>\r\n        <packaging.type>minify,runnable</packaging.type>\r\n        <maven.compiler.debug>true</maven.compiler.debug>\r\n    </properties>\r\n    \r\n    <profiles>\r\n        <profile>\r\n            <id>usr-package</id>\r\n            <properties>\r\n                <packaging.type>usr</packaging.type>\r\n            </properties>        \r\n        </profile>    \r\n    </profiles>\r\n    \r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>javax.servlet</groupId>\r\n            <artifactId>javax.servlet-api</artifactId>\r\n            <version>3.1.0</version>\r\n            <scope>provided</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>commons-httpclient</groupId>\r\n            <artifactId>commons-httpclient</artifactId>\r\n            <version>3.1</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>junit</groupId>\r\n            <artifactId>junit</artifactId>\r\n            <version>4.13.1</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>javax.servlet</groupId>\r\n            <artifactId>jstl</artifactId>\r\n            <version>1.2</version> <!-- or the version you downloaded -->\r\n            <scope>provided</scope>\r\n        </dependency>\r\n        <!--json scope provided-->\r\n        <dependency>\r\n            <groupId>javax.json</groupId>\r\n            <artifactId>javax.json-api</artifactId>\r\n            <version>1.1.4</version> <!-- You can check for the latest version -->\r\n            <scope>provided</scope>\r\n        </dependency>\r\n    </dependencies>\r\n    \r\n    <build>\r\n        <finalName>${project.artifactId}</finalName>\r\n        <plugins>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-war-plugin</artifactId>\r\n                <version>3.3.2</version>\r\n                <configuration>\r\n                    <packagingExcludes>pom.xml</packagingExcludes>\r\n                </configuration>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>io.openliberty.tools</groupId>\r\n                <artifactId>liberty-maven-plugin</artifactId>\r\n                <version>3.7.1</version>\r\n                <configuration>\r\n                    <copyDependencies>\r\n                        <dependencyGroup>\r\n                            <location>jdbc</location>\r\n                            <dependency>\r\n                                <groupId>com.ibm.db2</groupId>\r\n                                <artifactId>jcc</artifactId>\r\n                                <version>11.5.6.0</version>\r\n                            </dependency>\r\n                        </dependencyGroup>\r\n                    </copyDependencies>\r\n                    <assemblyArtifact>\r\n                        <groupId>io.openliberty</groupId>\r\n                        <artifactId>openliberty-runtime</artifactId>\r\n                        <version>[21.0.0.3,)</version>\r\n                        <type>zip</type>\r\n                    </assemblyArtifact>\r\n                    <serverName>${project.artifactId}Server</serverName>\r\n                    <include>${packaging.type}</include>\r\n                </configuration>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-failsafe-plugin</artifactId>\r\n                <version>2.19.1</version>\r\n                <executions>\r\n                    <execution>\r\n                        <goals>\r\n                            <goal>integration-test</goal>\r\n                            <goal>verify</goal>\r\n                        </goals>\r\n                    </execution>\r\n                </executions>\r\n            </plugin>\r\n        </plugins>\r\n    </build>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision aa34b8252ecc382849068ccffcd8497b0a36766b)
++++ b/pom.xml	(date 1708684007460)
+@@ -87,6 +87,7 @@
+                                 <artifactId>jcc</artifactId>
+                                 <version>11.5.6.0</version>
+                             </dependency>
++
+                         </dependencyGroup>
+                     </copyDependencies>
+                     <assemblyArtifact>
+Index: src/main/webapp/signup.jsp
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><%--\r\n  Created by IntelliJ IDEA.\r\n  User: Dell\r\n  Date: 2/21/2024\r\n  Time: 9:42 PM\r\n  To change this template use File | Settings | File Templates.\r\n--%>\r\n<%@ page language=\"java\" contentType=\"text/html; charset=UTF-8\" pageEncoding=\"UTF-8\"%>\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n  <meta charset=\"UTF-8\">\r\n  <title>Sign Up</title>\r\n  <style>\r\n    body {\r\n      font-family: Arial, sans-serif;\r\n      margin: 0;\r\n      padding: 0;\r\n      display: flex;\r\n      justify-content: center;\r\n      align-items: center;\r\n      height: 100vh;\r\n      background-color: #f4f4f4;\r\n    }\r\n\r\n    .signup-container {\r\n      width: 300px;\r\n      padding: 20px;\r\n      background-color: #fff;\r\n      border: 1px solid #ddd;\r\n      border-radius: 5px;\r\n      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n    }\r\n\r\n    label {\r\n      display: block;\r\n      margin-bottom: 8px;\r\n    }\r\n\r\n    input {\r\n      width: 100%;\r\n      padding: 8px;\r\n      margin-bottom: 16px;\r\n      box-sizing: border-box;\r\n    }\r\n\r\n    .error {\r\n      color: #ff0000;\r\n      margin-bottom: 16px;\r\n    }\r\n\r\n    .submit-btn {\r\n      background-color: #333;\r\n      color: #fff;\r\n      padding: 10px;\r\n      border: none;\r\n      cursor: pointer;\r\n    }\r\n  </style>\r\n</head>\r\n<body>\r\n\r\n<div class=\"signup-container\">\r\n  <h2>Sign Up</h2>\r\n\r\n  <%-- Display errors if any --%>\r\n  <div class=\"error\">\r\n    <jsp:include page=\"errorTags.jsp\" />\r\n  </div>\r\n\r\n  <form action=\"signup\" method=\"post\">\r\n    <label for=\"name\">Name:</label>\r\n    <input type=\"text\" id=\"name\" name=\"name\" required>\r\n\r\n    <label for=\"email\">Email:</label>\r\n    <input type=\"email\" id=\"email\" name=\"email\" required>\r\n\r\n    <label for=\"password\">Password:</label>\r\n    <input type=\"password\" id=\"password\" name=\"password\" required>\r\n\r\n    <input type=\"submit\" value=\"Sign Up\" class=\"submit-btn\">\r\n  </form>\r\n  <p>you have an account? <a href=\"signing.jsp\">Sign In</a></p>\r\n</div>\r\n\r\n</body>\r\n</html>\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/webapp/signup.jsp b/src/main/webapp/signup.jsp
+--- a/src/main/webapp/signup.jsp	(revision aa34b8252ecc382849068ccffcd8497b0a36766b)
++++ b/src/main/webapp/signup.jsp	(date 1708674332927)
+@@ -70,13 +70,13 @@
+ 
+   <form action="signup" method="post">
+     <label for="name">Name:</label>
+-    <input type="text" id="name" name="name" required>
++    <input type="text" id="name" name="name" required value="mesbahi">
+ 
+     <label for="email">Email:</label>
+-    <input type="email" id="email" name="email" required>
++    <input type="email" id="email" name="email" required value="mesbahi.ed1@gmial.com">
+ 
+-    <label for="password">Password:</label>
+-    <input type="password" id="password" name="password" required>
++    <label for="password"  >Password:</label>
++    <input type="password" id="password" name="password" required value="123456">
+ 
+     <input type="submit" value="Sign Up" class="submit-btn">
+   </form>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2589c2ca-f50a-4b08-9024-dde4319b0baf\" name=\"Changes\" comment=\"add signup servlet\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources/ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources/ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Add new Servlet\" />\r\n        <option value=\"Jsp File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2cgVwX0th05wcJdYkTurNjywTYg\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/IdeaProjects/authentication/src/main/java/estm/dsic/umi/services&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;DatabaseDriversLRU&quot;: [\r\n      &quot;mysql&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Dell\\IdeaProjects\\authentication\\src\\main\\java\\estm\\dsic\\umi\\services\\\" />\r\n      <recent name=\"C:\\Users\\Dell\\IdeaProjects\\authentication\\src\\main\\java\\estm\\dsic\\umi\\services\\interfaces\" />\r\n      <recent name=\"C:\\Users\\Dell\\IdeaProjects\\authentication\\src\\main\\java\\estm\\dsic\\umi\\dao\" />\r\n      <recent name=\"C:\\Users\\Dell\\IdeaProjects\\authentication\\src\\main\\java\\estm\\dsic\\umi\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunAnythingCache\">\r\n    <option name=\"myCommands\">\r\n      <command value=\"mvn clean install\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2589c2ca-f50a-4b08-9024-dde4319b0baf\" name=\"Changes\" comment=\"\" />\r\n      <created>1708533448395</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1708533448395</updated>\r\n      <workItem from=\"1708533449105\" duration=\"6589000\" />\r\n      <workItem from=\"1708596689570\" duration=\"616000\" />\r\n      <workItem from=\"1708597350308\" duration=\"185000\" />\r\n      <workItem from=\"1708597573666\" duration=\"197000\" />\r\n      <workItem from=\"1708597818886\" duration=\"8385000\" />\r\n      <workItem from=\"1708609299289\" duration=\"2206000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"initial commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1708549804503</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1708549804503</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"add home jsp\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1708550563270</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1708550563270</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"add services and dao\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1708597268024</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1708597268024</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"add signup servlet\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1708605735361</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1708605735361</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"initial commit\" />\r\n    <MESSAGE value=\"add home jsp\" />\r\n    <MESSAGE value=\"add services and dao\" />\r\n    <MESSAGE value=\"add signup servlet\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"add signup servlet\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision aa34b8252ecc382849068ccffcd8497b0a36766b)
++++ b/.idea/workspace.xml	(date 1708684009176)
+@@ -5,8 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="add signup servlet">
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ee5ea6e9-a868-4ccd-aa52-5c9faf7dcb73.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -24,6 +25,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+@@ -85,6 +91,7 @@
+       <workItem from="1708597573666" duration="197000" />
+       <workItem from="1708597818886" duration="8385000" />
+       <workItem from="1708609299289" duration="2206000" />
++      <workItem from="1708674134160" duration="3268000" />
+     </task>
+     <task id="LOCAL-00001" summary="initial commit">
+       <option name="closed" value="true" />
+@@ -123,6 +130,17 @@
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="initial commit" />
