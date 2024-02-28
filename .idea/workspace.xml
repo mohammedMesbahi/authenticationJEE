@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="add jndi">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_28_AM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_28_AM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_29_AM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_29_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_28_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_28_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_29_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_29_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/LogoutServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SigningServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SignupServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/DefaultServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/DefaultServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signing.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signing.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/successTags.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/successTags.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="singleServlet" />
+        <entry key="$PROJECT_DIR$" value="static_resources_xml" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -198,16 +197,5 @@
     <MESSAGE value="add signup servlet" />
     <MESSAGE value="add jndi" />
     <option name="LAST_COMMIT_MESSAGE" value="add jndi" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

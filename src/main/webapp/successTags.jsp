@@ -2,7 +2,7 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<c:if test="${not empty requestScope.successMessage}">
+<c:if test="${not empty requestScope.successMessages}">
     <ul>
         <c:forEach var="success" items="${requestScope.successMessage}">
             <li>${success}</li>

@@ -85,6 +85,7 @@ public class DefaultServlet extends HttpServlet {
 
             // Check credentials (replace this with your authentication logic)
             if (errorMessages.isEmpty()) {
+                // TODO : debug
                 User user = DefaultAuthService.getInstance().authenticate(userEmail, userPassword);
                 if (user == null) {
                     errorMessages.add("Invalid email or password.");
