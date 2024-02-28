@@ -40,7 +40,8 @@ public class SignupServlet extends HttpServlet {
         if (dbUser != null) {
             /*success message*/
             successMessages.add("User created successfully.");
-            request.getRequestDispatcher("signup.jsp").forward(request, response);
+            request.setAttribute("successMessages", successMessages);
+            request.getRequestDispatcher("signing.jsp").forward(request, response);
         } else {
             errorMessages.add("User already exists.");
             request.setAttribute("errorMessages", errorMessages);

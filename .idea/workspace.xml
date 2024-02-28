@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="add signup servlet">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/UserDaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/UserDaoJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SigningServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SigningServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SignupServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="add signup servlet" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +156,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="singleServlet" />
                       </list>
                     </value>
                   </entry>
