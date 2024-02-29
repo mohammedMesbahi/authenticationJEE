@@ -18,6 +18,11 @@ public class User implements Serializable{
         setPassword(password);
     }
 
+    public User(String email, String password) {
+        setEmail(email);
+        setPassword(password);
+    }
+
     public Integer getId() {
         return id;
     }

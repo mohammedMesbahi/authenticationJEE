@@ -20,6 +20,8 @@
         <feature>cdi-4.0</feature>
         <feature>jndi-1.0</feature>
         <feature>faces-4.0</feature>
+        <feature>restfulWS-3.1</feature>
+        <feature>jsonb-3.0</feature>
     </featureManager>
     <library id="jdbcLib">
         <fileset dir="jdbc"
