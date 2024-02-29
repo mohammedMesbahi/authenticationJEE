@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2589c2ca-f50a-4b08-9024-dde4319b0baf" name="Changes" comment="all is done">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_28_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_28_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_29_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_23_2024_11_29_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/beans/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/DefaultServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/servlets/SignupServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/controllers/DefaultAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/controllers/DefaultAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/JdbcConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/UserDaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/UserDaoJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/dao/dbConfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/services/DefaultAuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/estm/dsic/umi/services/interfaces/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +124,9 @@
       <workItem from="1709105954776" duration="333000" />
       <workItem from="1709129891029" duration="1136000" />
       <workItem from="1709205735752" duration="2476000" />
+      <workItem from="1709229669458" duration="1334000" />
+      <workItem from="1709231170501" duration="8537000" />
+      <workItem from="1709242412394" duration="2587000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -209,16 +213,5 @@
     <MESSAGE value="add jndi" />
     <MESSAGE value="all is done" />
     <option name="LAST_COMMIT_MESSAGE" value="all is done" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/estm/dsic/umi/controllers/DefaultAuthController.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
